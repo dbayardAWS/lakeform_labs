@@ -1,9 +1,9 @@
 # Part 5 - Access the tables (without permissions)
 
+In this section, we will connect as one of query users ("UserFlights") and try to query the Flights dataset.  We don't expect this to work because we have not granted any permissions to the Flights table yet, but we will try anyways.
+
 
 ## Try accessing the tables as the UserFlights
-
-UserFlights has not been granted any access yet in Lake Formation, so we don't expect UserFlights to be able to query these tables.
 
 * Use the username drop-down at the top of the AWS console page and choose "Sign Out".
 
@@ -21,14 +21,15 @@ UserFlights has not been granted any access yet in Lake Formation, so we don't e
 
 ![screen](images/use2.png)
 
-* Click Get Started
+* Click Get Started if this is your first time using Athena
 
-* Close the tutorial window
+* Close the Athena tutorial window if one pops-up.
 
 * In the Database drop-down, notice that UserFlights does not see the Flights or Reviews databases
 
 ![screen](images/use3.png)
 
+Note: You may or may not see the "sampledb" database depending on if you have previously used Athena in this account prior to this lab.
 
 
 ## Congratulations.

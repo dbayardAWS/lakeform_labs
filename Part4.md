@@ -1,5 +1,10 @@
 # Part 4 - Create tables by crawling our S3 locations
 
+In this part, we use the Glue Crawler to look at our two datasets and create table definitions for them in our data catalog.
+
+You can read more about Glue Crawlers [here](https://docs.aws.amazon.com/glue/latest/dg/components-overview.html#crawling-intro).
+
+
 ## Create a crawler for the Flights data
 
 * On the left-hand column of the Lake Formation console, click on "Crawlers"
@@ -49,6 +54,9 @@ s3://us-east-1.elasticmapreduce.samples/flights/parquet/
 
 ## Create another crawler for the Product Reviews dataset
 
+While the crawler is running for the Flights dataset, let's create another crawler for the Reviews dataset.
+
+
 * Click the "Add crawler" button.
 
 * Enter "reviews_crawl" for the Crawler name and click "Next"
@@ -86,7 +94,7 @@ s3://amazon-reviews-pds/parquet/
 
 ![screen](images/lf34.png)
 
-* Wait for both crawlers to finish running.
+* Wait for both crawlers to finish running.  You should see both crawlers have a Status of "Ready".
 
 ![screen](images/lf35.png)
 
@@ -96,11 +104,12 @@ Notice that each crawler has added 1 table.
 
 ![screen](images/lf36.png)
 
-These are the 2 tables that the crawlers created.
+These are the two tables that the crawlers created.  You can click on the table names if you would like explore further.
+
 
 
 ## Congratulations.
 
-You have used Glue Crawlers to discover and define 2 new tables.  Now, we are ready to experiment with Lake Formation's security permissions.
+You have used Glue Crawlers to discover and define two new tables.  Now, we are ready to experiment with Lake Formation's security permissions.
 
 Proceed onto [Part 5](Part5.md)

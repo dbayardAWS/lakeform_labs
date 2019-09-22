@@ -1,5 +1,7 @@
 # Part 6 - Grant permissions to our users
 
+In this part, we will grant SELECT permission on our tables to our query users.  Specifically, UserFlights will be granted SELECT on just the "flights_parquet" table.  UserAll will be granted SELECT on both "flights_parquet" and "reviews_parquet" tables.
+
 
 ## Use the Lake Formation administrator to grant permissions
 
@@ -42,6 +44,8 @@
 * For table permissions, choose "Select".  Then click the Grant button
 
 ![screen](images/use8.png)
+
+Once the permission is granted, you should see a page like this:
 
 ![screen](images/use9.png)
 

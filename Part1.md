@@ -1,6 +1,13 @@
-# Part1 - Setup the Lake Formation users and the Glue Crawler role
+# Part 1 - Setup the Lake Formation users and the Glue Crawler role
+
+
+For this lab, we will create a number of IAM users to be able to demonstrate different levels of access when they use Lake Formation and the related services like Athena.  In addition, we will use the Glue Crawler in this lab, so we will create a role that provides the permissions that the crawler will need.
+
 
 ## Create the Lake Formation Administrator user
+
+First, we will create a user who will be our Lake Formation administrator.  For this lab, she will have the overall AdministratorAccess policy.  If you wanted to use a smaller set of permissions, refer to the [documentation](https://docs.aws.amazon.com/lake-formation/latest/dg/permissions-reference.html#persona-dl-admin),
+
 
 * Navigate to the IAM Console
 
@@ -24,16 +31,19 @@
 
 ![screen](images/iam4.png)
 
-* Copy the sign-in url (https://######.signin.aws.amazon.com/console) and save it in a notepad or text editor for later.  Click "Close"
+Once your user is created, you should see a screen like this:
 
 ![screen](images/iam5.png)
 
+
+
 ## Create two query users
+
+Next, we will create two new users ("UserFlights" and "UserAll") to run queries.  In a later section of the lab, we will grant each user different Lake Formation permissions and demonstrate their different levels of access.
+
 
 * Click the "Add user" button 
 
-
-This is based on the instructions [here](https://docs.aws.amazon.com/lake-formation/latest/dg/tut-create-lf-user.html)
 
 * Enter "UserFlights" for the User name.  Then click "Add another user"
 
@@ -82,6 +92,9 @@ This is based on the instructions [here](https://docs.aws.amazon.com/lake-format
 
 ```
 
+To read more about creating Lake Formation query users and what the above policies does, go [here](https://docs.aws.amazon.com/lake-formation/latest/dg/tut-create-lf-user.html)
+
+
 ![screen](images/iam11.png)
 
 * Click "Review policy" button at the bottom of the Create policy page.
@@ -98,7 +111,7 @@ This is based on the instructions [here](https://docs.aws.amazon.com/lake-format
 
 ![screen](images/iam14.png)
 
-* Clear out the search field and type in "Datalake".  Then click on the refresh button 
+* Clear out the search field and type in "Datalake".  Then click on the Refresh button to the right of the "Create policy" button.  A picture of the Refresh button is shown below:
 
 ![screen](images/iam15.png)
 
@@ -136,11 +149,14 @@ This is based on the instructions [here](https://docs.aws.amazon.com/lake-format
 
 ![screen](images/iamglue2.png)
 
+
+Once the role is created, you should a screen like this:
+
 ![screen](images/iamglue3.png)
 
 
 ## Congratulations.
 
-You have setup an IAM user to be the Lake Formation administrator.  And you have created 2 IAM users to be used as query users- we will grant them differing Lake Formation privileges in a later lab. Finally, we created a role that the Glue Crawler can use.
+You have setup an IAM user to be the Lake Formation administrator.  And you have created two IAM users to be used as query users- we will grant them differing Lake Formation privileges in a later part of the lab. Finally, we created a role that the Glue Crawler can use.
 
 Proceed onto [Part 2](Part2.md)

@@ -38,6 +38,8 @@ select count(*) from flights_parquet;
 
 ![screen](images/use14.png)
 
+Notice that the permissions work as expected.  UserFlights can access the flights_parquet table but does not see the reviews_parquet table.
+
 
 
 ## Test with the UserAll user
@@ -77,7 +79,7 @@ select count(*) from reviews.reviews_parquet;
 
 ![screen](images/use17.png)
 
-
+Notice that the permissions work as expected.  UserAll can access both the flights_parquet and reviews_parquet tables.
 
 ## Congratulations.
 
