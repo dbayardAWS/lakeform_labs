@@ -6,7 +6,7 @@ For this lab, we will create a number of IAM users to be able to demonstrate dif
 
 ## Create the Lake Formation Administrator user
 
-First, we will create a user who will be our Lake Formation administrator.  For this lab, she will have the overall AdministratorAccess policy.  If you wanted to use a smaller set of permissions, refer to the [documentation](https://docs.aws.amazon.com/lake-formation/latest/dg/permissions-reference.html#persona-dl-admin),
+First, we will create a user who will be our Lake Formation administrator.  For this lab, she will have the overall acount AdministratorAccess policy.  If you wanted to use a smaller set of permissions, you can refer to the [Lake Formation documentation](https://docs.aws.amazon.com/lake-formation/latest/dg/permissions-reference.html#persona-dl-admin) for specifcs.
 
 
 * Navigate to the IAM Console
@@ -92,7 +92,7 @@ Next, we will create two new users ("UserFlights" and "UserAll") to run queries.
 
 ```
 
-To read more about creating Lake Formation query users and what the above policies does, go [here](https://docs.aws.amazon.com/lake-formation/latest/dg/tut-create-lf-user.html)
+To read more about creating Lake Formation query users and what the above policy does, go [here](https://docs.aws.amazon.com/lake-formation/latest/dg/tut-create-lf-user.html)
 
 
 ![screen](images/iam11.png)
