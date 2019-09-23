@@ -23,6 +23,9 @@ In this section, we will connect as one of query users ("UserFlights") and try t
 
 * Click Get Started if this is your first time using Athena
 
+NOTE: If you click on the "Get Started" button, but get a "Insufficient Lake Formation permission(s): Required Create Database on Catalog" message.
+
+
 * Close the Athena tutorial window if one pops-up.
 
 * In the Database drop-down, notice that UserFlights does not see the Flights or Reviews databases
