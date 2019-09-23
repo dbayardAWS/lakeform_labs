@@ -23,7 +23,7 @@ In this section, we will connect as one of query users ("UserFlights") and try t
 
 * Click Get Started if this is your first time using Athena
 
-NOTE: If you click on the "Get Started" button, but get a "Insufficient Lake Formation permission(s): Required Create Database on Catalog" message, then click on this [https://console.aws.amazon.com/athena/home?force&region=us-east-1#query](https://console.aws.amazon.com/athena/home?force&region=us-east-1#query).  This error message occurs when the user first tries to access Athena and Athena is trying to create a "sampledb" database as part of a built-in tutorial.  
+NOTE: If you click on the "Get Started" button, but get a "Insufficient Lake Formation permission(s): Required Create Database on Catalog" message, then click on this link: [https://console.aws.amazon.com/athena/home?force&region=us-east-1#query](https://console.aws.amazon.com/athena/home?force&region=us-east-1#query).  This error message occurs when the user first tries to access Athena and Athena is trying to create a "sampledb" database as part of a built-in tutorial.  
 
 
 
