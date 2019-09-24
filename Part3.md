@@ -1,8 +1,22 @@
 # Part 3 - Register S3 locations and Create databases
 
-In this part, we will register the S3 locations of two datasets.  The first dataset is Airline Flight data.  The second dataset is Amazon Product Reviews.  Both datasets are public datasets housed in S3 buckets.
+In this part, we will login as our Lake Formation Admin and register the S3 locations of two datasets.  The first dataset is Airline Flight data.  The second dataset is Amazon Product Reviews.  Both datasets are public datasets housed in S3 buckets.
 
 Then, we will create two databases- one called Flights and one called Reviews.
+
+## Login as LFadmin user
+
+* Use the username drop-down at the top of the AWS console page and choose "Sign Out".
+
+![screen](images/iam18.png)
+
+* Click the "Sign In to the Console" button
+
+![screen](images/iam19.png)
+
+* Enter "LFadmin" for the IAM user name.  Enter the Password you used when creating the users for the Password.  Click "Sign In"
+
+![screen](images/iam20.png)
 
 
 ## Register S3 locations with Lake Formation
