@@ -10,21 +10,7 @@ NOTE: This lab assumes you are running in a non-production account.  If you are 
 
 You can read more about switching to the Lake Formation permissions model [here](https://docs.aws.amazon.com/lake-formation/latest/dg/change-settings.html).
 
-## Login as LFadmin user
-
-* Use the username drop-down at the top of the AWS console page and choose "Sign Out".
-
-![screen](images/iam18.png)
-
-* Click the "Sign In to the Console" button
-
-![screen](images/iam19.png)
-
-* Enter "LFadmin" for the IAM user name.  Enter the Password you used when creating the users for the Password.  Click "Sign In"
-
-![screen](images/iam20.png)
-
-* Navigate to the Lake Formation Console.
+* While still logged in with a user/role that has IAM Administrator prilleges, Navigate to the Lake Formation Console.
 
 ![screen](images/lf1.png)
 
